@@ -1,13 +1,13 @@
 version: '3.4'
 services:
   postgres:
-#    container_name: 'postgres_db'
+    container_name: 'postgres'
     image: 'postgres:latest'
   redis:
-#    container_name: 'redis_db'
+    container_name: 'redis'
     image: 'redis:latest'
   nginx:
-#    container_name: 'nginx'
+    container_name: 'nginx'
     restart: always
     build:
       context: ./nginx
@@ -16,7 +16,7 @@ services:
       - '3050:80'
 
   api:
-#    container_name: 'server'
+    container_name: 'api'
     depends_on:
       - postgres
     build:
@@ -34,6 +34,7 @@ services:
       - PGPASSWORD=postgres_password
       - PGPORT=5432
   client:
+    container_name: 'client'
     build:
       dockerfile: Dockerfile.dev
       context: ./client
@@ -41,6 +42,7 @@ services:
       - /app/node_modules
       - ./client:/app
   worker:
+    container_name: 'worker'
     build:
       dockerfile: Dockerfile.dev
       context: ./worker
