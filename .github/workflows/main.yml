@@ -34,7 +34,7 @@ jobs:
         run: docker run -e CI=true zanebclark/react-test npm run test
 
       - name: Log in to Docker CLI
-        run run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+        run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
 
       - name: Build Production Client
         run: docker build -t zanebclark/multi-client ./client
