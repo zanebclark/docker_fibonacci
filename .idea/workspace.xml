@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d39ac9b-7458-4932-b7f9-d9e01107c924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/zaneb.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsonSchemas.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerrun.aws.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,17 +17,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.github/workflows/main.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -66,8 +52,8 @@
         <option value="$PROJECT_DIR$/client/src/App.test.js" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/.github/workflows/ci.yml" />
-        <option value="$PROJECT_DIR$/Dockerrun.aws.json" />
         <option value="$PROJECT_DIR$/.github/workflows/main.yml" />
+        <option value="$PROJECT_DIR$/Dockerrun.aws.json" />
       </list>
     </option>
   </component>
@@ -219,14 +205,27 @@
       <option name="project" value="LOCAL" />
       <updated>1577582066572</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="AWS EB Dockerrun and CI/CD updates.">
+      <created>1577645086040</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1577645086040</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added memory allocation config">
+      <created>1577645830184</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1577645830184</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="935" y="0" width="930" height="1087" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12183021" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12068965" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -298,7 +297,9 @@
     <MESSAGE value="Don't check logs before running container." />
     <MESSAGE value="Push Dockerfiles." />
     <MESSAGE value="Too many runs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Too many runs" />
+    <MESSAGE value="AWS EB Dockerrun and CI/CD updates." />
+    <MESSAGE value="Added memory allocation config" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added memory allocation config" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server/Dockerfile.dev">
@@ -421,17 +422,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerrun.aws.json">
+    <entry file="file://$PROJECT_DIR$/.github/workflows/main.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="555">
+          <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.github/workflows/main.yml">
+    <entry file="file://$PROJECT_DIR$/Dockerrun.aws.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+        <state relative-caret-position="405">
+          <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
         </state>
       </provider>
     </entry>
