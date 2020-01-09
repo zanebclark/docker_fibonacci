@@ -1,4 +1,4 @@
-version: '3.4'
+version: '3'
 services:
   postgres:
     container_name: 'postgres'
@@ -14,7 +14,6 @@ services:
       dockerfile: Dockerfile.dev
     ports:
       - '3050:80'
-
   api:
     container_name: 'api'
     depends_on:
