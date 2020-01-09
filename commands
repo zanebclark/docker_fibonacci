@@ -1,0 +1,54 @@
+minikube start --container-runtime=cri-o
+minikube start --container-runtime=docker
+minikube ssh
+sudo docker container ls
+sudo runc list
+kubectl config view
+kubectl cluster-info
+minikube dashboard
+Accessible with variable port
+
+kubectl proxy
+Accessable via http://127.0.0.1:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/
+
+curl http://localhost:8001/
+
+docker system prune -a # Stop all containers and remove images (check this)
+
+kubectl get pods # List running pods in Kubernetes Cluster
+kubectl get services # List running pods in Kubernetes service
+minikube ip # Get the IP of a local MiniKube
+kubectl apply -f <filename> # DESCRIBE THIS
+minikube status
+kubectl cluster-info
+kubectl describe pod <podname>
+kubectl delete -f <filename>
+kubectl get pods -o wide
+
+
+kubectl rollout history deploy <deploymentname>
+kubectl rollout history deploy <deploymentname > --revision=< revisionnumber >
+kubectl set image deployment < deploymentname > < imagename >=< newimage >
+kubectl get deploy, rs,po -l app=mynginx
+kubectl rollout undo deployment < deploymentname > --to-revision=1
+kubectl rollout restart -f <filename>
+kubectl set image deployment/client-deployment client=zanebclark/multi-client:v5
+eval $(minikube docker-env)
+minikube docker-env
+docker logs <container-id>
+docker exec -it <container-id> sh
+kubectl get pods
+kubectl logs <pod-id>
+kubectl get deployments
+kubectl delete deployment client-deployment
+kubectl delete service client-node-port
+kubectl apply -f <filepath>
+
+####################################
+Terminology:
+####################################
+
+EKS - Amazon Elastic Container Service for Kubernetes
+GKS - Google Cloud Kubernetes Engine
+Minikube
+kubectl
