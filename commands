@@ -46,6 +46,7 @@ kubectl apply -f <filepath>
 kubectl get storageclass
 kubectl get pv
 kubectl get pvc
+kubectl create secret generic pgpassword --from-literal PGPASSWORD=12345asdf
 
 ####################################
 Terminology:
