@@ -43,6 +43,9 @@ kubectl get deployments
 kubectl delete deployment client-deployment
 kubectl delete service client-node-port
 kubectl apply -f <filepath>
+kubectl get storageclass
+kubectl get pv
+kubectl get pvc
 
 ####################################
 Terminology:
@@ -52,3 +55,9 @@ EKS - Amazon Elastic Container Service for Kubernetes
 GKS - Google Cloud Kubernetes Engine
 Minikube
 kubectl
+
+Notes:
+
+Persistent Volume Claim vs Persistent Volume vs Volume
+Volumes exist wihin pods
+Persistent Volumes exist outside of pods
